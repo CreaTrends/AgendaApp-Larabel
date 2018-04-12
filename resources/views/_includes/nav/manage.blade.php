@@ -19,6 +19,7 @@
           <li><a>Students</a></li>
           <li><a>Parents</a></li>
           <li><a>Config</a></li>
+          <li><a>Config</a></li>
         </ul>
       </div>
     </nav>
