@@ -1,0 +1,50 @@
+// Body
+$body-background: whitesmoke;
+
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-height : 4.25rem !important;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Custom Variables
+
+$family-serif: "Open Sans", "Georgia", serif;
+$family-primary: $family-serif;
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Add a serif family
+$family-serif: 'Fira Sans', sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+
+// Use the existing orange as the danger color
+$danger: red;
+// Use the new serif family
+$family-primary: $family-serif;
