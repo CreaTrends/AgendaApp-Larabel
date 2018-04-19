@@ -13,11 +13,16 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        //Schema::defaultStringLength(191); siempre agregar en una nueva instalacion este parametro
+        Schema::defaultStringLength(191);
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('api_token', 60)->unique();
+            $table->string('verified_token', 60);
+            $table->boolean('status')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });
@@ -30,6 +35,8 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('users');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }

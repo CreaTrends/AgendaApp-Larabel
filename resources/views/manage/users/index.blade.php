@@ -37,7 +37,15 @@
 						<td>{{$user->name}}</td>
 						<td>{{$user->email}}</td>
 						<td>{{$user->created_at->toformattedDateString()}}</td>
-						<td class="has-text-right"><a class="button is-outlined m-r-5" href="{{route('users.show', $user->id)}}">View</a><a class="button is-light" href="{{route('users.edit', $user->id)}}">Edit</a></td>
+						<td class="has-text-right">
+							<a class="button is-outlined m-r-5" href="{{route('users.show', $user->id)}}">View</a>
+							<a class="button is-light m-r-5" href="{{route('users.edit', $user->id)}}">Edit</a>
+							<form action="{{route('users.destroy', $user->id)}}" method="POST">
+    					<input type="hidden" name="_method" value="DELETE">
+   						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+   						<input type="submit" class="button is-danger" value="Delete"/>
+   				  </form>
+						</td>
 					</tr>
 					@endforeach
 				</tbody>

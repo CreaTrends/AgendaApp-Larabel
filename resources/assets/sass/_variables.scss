@@ -1,5 +1,5 @@
 // Body
-$body-background: whitesmoke;
+$body-background: #fafafa;
 
 
 // Brands
@@ -8,15 +8,48 @@ $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
 $brand-danger: #bf5329;
+// Colors 
+$grey-darker: #2a2a26;
+$grey-dark: #3e3f3a;
+$grey: #8e8c84;
+$grey-light: #c9c8b8;
+$grey-lighter: #e6e1d7;
+
+$orange: #fba32a;
+$yellow: #fba32a;
+$green: #35dd97;
+$blue: #5763cb;
+$red: #ff593d;
+
+$primary: #29b9bb !default;
+$warning: $orange;
+$warning-invert: #fff;
 
 // Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
+
+
+
+$font-size-base: 26px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
 
+$title-weight : 500;
+$title-size : 3rem;
 
+// menu admin sidebar
+$aside-menu-title-size : 1.1rem;
+$aside-menu-title-b-margin : 0rem;
+$aside-menu-font-family : $font-family-gt-eesti-display;
+// Widgets Cards
+$is-widget-card : $body-background;
+$is-widget-title :$body-background;
+
+$card-header-background-color : red;
+$card-header-color : white;
+$card-color : #463853;
+$card-content-background-color : hsl(204, 86%, 53%);
+$card-header-weight : 500;
+$card-header-shadow : none;
 
 // Navbar
 $navbar-default-bg: #fff;
@@ -30,7 +63,7 @@ $panel-default-heading-bg: #fff;
 
 // Custom Variables
 
-$family-serif: "Open Sans", "Georgia", serif;
+
 $family-primary: $family-serif;
 // 2. Set your own initial variables
 // Update blue
@@ -39,7 +72,6 @@ $blue: #72d0eb;
 $pink: #ffb3b3;
 $pink-invert: #fff;
 // Add a serif family
-$family-serif: 'Fira Sans', sans-serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
@@ -48,3 +80,9 @@ $family-serif: 'Fira Sans', sans-serif;
 $danger: red;
 // Use the new serif family
 $family-primary: $family-serif;
+
+
+$message-radius : 0px;
+
+$message-body-border :1px solid #dbdbdb !important;
+$message-background-color : $body-background;

@@ -1,1 +1,44 @@
-// login page
+.title {
+	font-family: $font-family-gt-eesti-display !important;
+}
+// Admin Page Dashboard Welcome
+
+.admin-sidebar {
+	padding: 15px 10px; 
+	background: transparent;
+	font-family:$aside-menu-font-family;
+	margin-bottom: 0rem;
+	.menu-title {
+		font-weight: $title-weight;
+		font-size: $aside-menu-title-size;
+		color:$white;
+		margin-bottom: $aside-menu-title-b-margin;
+		letter-spacing: 0px;
+		padding: 10px 15px;
+		background-color: $primary;
+		margin-top: 0px;
+	}
+	&>ul.menu-list {
+		&>li {
+			border-bottom: 1px solid rgba(158, 158, 158, 0.3);
+			
+			
+			& > a {
+				padding: 10px 15px;
+			}
+		}
+		&> li:last-child {
+        		border-bottom: 0px solid rgba(255, 255, 0, 1);
+    		}
+	}
+}
+
+.is-a-widget {
+	border-radius: $box-radius;
+	&>.card-footer { 
+		padding: 2rem 1.5rem;
+	}
+	&>.card-header {
+		background-color: $card-content-background-color;
+	}
+}

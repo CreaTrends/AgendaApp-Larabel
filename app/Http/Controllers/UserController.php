@@ -7,6 +7,8 @@ use DB;
 use Session;
 use Hash;
 use Input;
+use Auth;
+
 class UserController extends Controller
 {
     /**
@@ -37,6 +39,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+      
       $this->validateWith([
         'name' => 'required|max:255',
         'email' => 'required|email|unique:users'
@@ -54,6 +57,9 @@ class UserController extends Controller
         }
         $password = $str;
       }
+      dd(Hash::make($password));
+      die();
+
       $user = new User();
       $user->name = $request->name;
       $user->email = $request->email;
@@ -145,5 +151,9 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+
+      echo "<pre>";
+      $user  = Auth::user()->name;
+      print_r(Auth::check());
     }
 }

@@ -45,6 +45,7 @@ class PermissionController extends Controller
         $permission->save();
         Session::flash('success', 'Permission has been successfully added');
         return redirect()->route('permissions.index');
+        
       } elseif ($request->permission_type == 'crud') {
         $this->validate($request, [
           'resource' => 'required|min:3|max:100|alpha'

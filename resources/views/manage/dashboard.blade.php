@@ -7,5 +7,9 @@
 @endsection
 
 @section('content')
-{{ Auth::user()->hasRole('role-name') }}
+	@role('superadministrator')
+	
+	<p>This is visible to users with the admin role. Gets translated to
+	\Laratrust::hasRole('admin')</p>
+	@endrole
 @endsection

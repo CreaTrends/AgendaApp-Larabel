@@ -57,7 +57,7 @@
                         <b-checkbox :custom-value="{{$permission->id}}">{{$permission->display_name}} <em>({{$permission->description}})</em></b-checkbox>
                       </div>
                     @endforeach
-                  </ul>
+                  </b-checkbox-group>
                 </div>
               </div>
             </article>

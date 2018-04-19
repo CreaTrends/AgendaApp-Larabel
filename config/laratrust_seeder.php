@@ -11,18 +11,22 @@ return [
             'users' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
+        'teacher' => [
+            'users' => 'c,r,u,d',
+            'profile' => 'r,u'
+        ],
         'parent' => [
             'profile' => 'r,u'
+        ],
+        'student' => [
+            'profile' => 'r'
         ],
         'user' => [
             'profile' => 'r,u'
         ],
+        
     ],
-    'permission_structure' => [
-        'cru_user' => [
-            'profile' => 'c,r,u'
-        ],
-    ],
+    'permission_structure' => [],
     'permissions_map' => [
         'c' => 'create',
         'r' => 'read',

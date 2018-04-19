@@ -1,4 +1,4 @@
-<nav class="navbar has-shadow" >
+<nav class="navbar has-shadow is-fixed-top" >
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{route('home')}}">
@@ -33,24 +33,24 @@
             <div class="navbar-dropdown is-right" >
               <a href="#" class="navbar-item">
                 <span class="icon">
-                  <i class="fa fa-fw fa-user-circle-o m-r-5"></i>
+                  <i class="icofont icofont-ui-user"></i>
                 </span>Profile
               </a>
               <a href="#" class="navbar-item">
                 <span class="icon">
-                  <i class="fas fa-home"></i>
+                  <i class="icofont icofont-notification"></i>
                 </span>Notifications
               </a>
               <a href="{{route('manage.dashboard')}}" class="navbar-item">
-                <span class="icon">
-                  <i class="fa fa-fw fa-cog m-r-5"></i>
+                <span class="icon ">
+                  <i class="icofont icofont-options"></i>
                 </span>Manage
               </a>
               <hr class="navbar-divider">
               <a href="{{route('logout')}}" class="navbar-item" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
                 <span class="icon">
-                  <i class="fa fa-fw fa-sign-out m-r-5"></i>
+                  <i class="icofont icofont-logout"></i>
                 </span>
                 Logout
               </a>
